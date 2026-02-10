@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Discovery App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">
+                    <i class="fas fa-film"></i>
+                    <h1>Movie Discovery</h1>
+                </div>
+                <div class="header-controls">
+                    <div class="theme-toggle">
+                        <span class="theme-label">Dark Mode</span>
+                        <label class="switch">
+                            <input type="checkbox" id="theme-toggle">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="app-container">
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-search"></i> Tìm kiếm phim</h3>
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Nhập tên phim...">
+                        <i class="fas fa-search search-icon"></i>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-filter"></i> Lọc theo thể loại</h3>
+                    <div class="filter-container" id="genre-filters">
+                        
+                        <div class="loading-filters">Đang tải bộ lọc...</div>
+                    </div>
+                    <div class="filter-actions">
+                        <button id="select-all" class="btn btn-secondary">Chọn tất cả</button>
+                        <button id="clear-all" class="btn btn-secondary">Bỏ chọn tất cả</button>
+                    </div>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3><i class="fas fa-info-circle"></i> Thông tin</h3>
+                    <div class="info-box">
+                        <p>Ứng dụng này giúp bạn khám phá các bộ phim hay. Sử dụng bộ lọc thể loại và thanh tìm kiếm để tìm phim yêu thích.</p>
+                        <p class="movie-count">Tìm thấy: <span id="movie-count">0</span> phim</p>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main-content">
+                <div class="content-header">
+                    <h2>Danh sách phim</h2>
+                    <div class="sort-controls">
+                        <label for="sort-select">Sắp xếp:</label>
+                        <select id="sort-select">
+                            <option value="year-desc">Năm phát hành (Mới nhất)</option>
+                            <option value="year-asc">Năm phát hành (Cũ nhất)</option>
+                            <option value="title-asc">Tên phim (A-Z)</option>
+                            <option value="title-desc">Tên phim (Z-A)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="movies-container" id="movies-container">
+                    
+                    <div class="loading-movies">
+                        <div class="spinner"></div>
+                        <p>Đang tải danh sách phim...</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <!-- Modal chi tiết phim -->
+        <div class="modal" id="movie-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 id="modal-title"></h2>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="modal-poster">
+                        <img id="modal-poster" src="" alt="">
+                    </div>
+                    <div class="modal-info">
+                        <div class="info-row">
+                            <span class="info-label">Năm phát hành:</span>
+                            <span id="modal-year" class="info-value"></span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Thể loại:</span>
+                            <span id="modal-genres" class="info-value"></span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Đạo diễn:</span>
+                            <span id="modal-director" class="info-value"></span>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Diễn viên:</span>
+                            <span id="modal-actors" class="info-value"></span>
+                        </div>
+                        <div class="info-row full-width">
+                            <span class="info-label">Mô tả:</span>
+                            <p id="modal-description" class="info-value"></p>
+                        </div>
+                        <div class="info-row">
+                            <span class="info-label">Đánh giá:</span>
+                            <div class="rating">
+                                <span id="modal-rating"></span>
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-primary close-modal-btn">Đóng</button>
+                </div>
+            </div>
+        </div>
+
+        <footer class="footer">
+            <p>Movie Discovery App &copy; 2026 - Nơi giúp bạn khám phá thế giới điện ảnh</p>
+            <p class="footer-links">
+                <a href="https://github.com/Nguyen-DucQuang" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://nguyen-ducquang.github.io/newprofile/" target="_blank"><i class="fas fa-external-link-alt"></i> Porfolio</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
