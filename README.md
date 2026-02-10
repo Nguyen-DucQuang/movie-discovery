@@ -122,102 +122,114 @@ Cách 3: Dùng Live Server (nếu có)
 Hoàn tất!
 
 Ứng dụng sẽ tải danh sách phim và sẵn sàng sử dụng
-📋 Tính Năng Chi Tiết
-Phần Sidebar (Bên Trái)
-Thanh Tìm Kiếm: Nhập tên phim để tìm kiếm
-Bộ Lọc Thể Loại: Danh sách các thể loại phim
-Nút Hành Động: "Chọn tất cả" và "Bỏ chọn tất cả"
-Thông Tin: Hiển thị số lượng phim được tìm thấy
-Phần Main (Bên Phải)
-Tiêu Đề & Sắp Xếp: Tên phần và tùy chọn sắp xếp
-Grid Phim: Hiển thị các card phim dưới dạng lưới
-Card Phim: Mỗi card hiển thị:
-Poster phim
-Xếp hạng sao
-Overlay thông tin khi hover
-Năm phát hành
-Thể loại
-Modal Chi Tiết
-Poster: Hình ảnh phim
-Thông Tin: Năm, thể loại, đạo diễn, diễn viên
-Mô Tả: Tóm tắt nội dung phim
-Xếp Hạng: Điểm đánh giá dưới dạng sao
-🎨 Giao Diện & Thiết Kế
-Màu Sắc Chính
-Chế độ Sáng: Nền trắng, accent xanh tím
-Chế độ Tối: Nền đen, accent sáng
-Typography
-Heading: Poppins (Bold)
-Body: Roboto (Regular)
-Font Sizes: Responsive và dễ đọc
-Effects
-Gradient đẹp mắt ở header
-Hover effects mượt mà
-Animations smooth
-Shadow effects chuyên nghiệp
-📊 Dữ Liệu Phim
-Ứng dụng bao gồm danh sách 9 bộ phim nổi tiếng:
 
-Inception (2010) - Sci-Fi, Action, Thriller
-The Shawshank Redemption (1994) - Drama
-The Dark Knight (2008) - Action, Crime, Drama
-Parasite (2019) - Comedy, Drama, Thriller
-The Godfather (1972) - Crime, Drama
-Interstellar (2014) - Adventure, Drama, Sci-Fi
-The Matrix (1999) - Action, Sci-Fi
-Forrest Gump (1994) - Drama, Romance
-Avengers: Endgame (2019) - Action, Adventure, Drama
-...
-🚀 Cách Phát Triển Thêm
-Tính Năng Có Thể Thêm
-⭐ Chức năng "Yêu Thích" hoặc "Bookmark"
-💾 Lưu trữ dữ liệu dùng LocalStorage
-🔗 Kết nối API phim thực (TMDB, OMDb)
-🔐 Xác thực người dùng
-💬 Hệ thống bình luận
-⭐ Đánh giá phim của người dùng
-Cải Tiến Hiệu Năng
-📦 Tối ưu hóa hình ảnh
-🔄 Lazy loading cho poster
-⚡ Minify CSS/JS
-🗜️ Gzip compression
-📝 Giấy Phép
+### 📋 Tính Năng Chi Tiết
+  Phần Sidebar (Bên Trái)
+  Thanh Tìm Kiếm: Nhập tên phim để tìm kiếm
+  Bộ Lọc Thể Loại: Danh sách các thể loại phim
+  Nút Hành Động: "Chọn tất cả" và "Bỏ chọn tất cả"
+  Thông Tin: Hiển thị số lượng phim được tìm thấy
+  Phần Main (Bên Phải)
+  Tiêu Đề & Sắp Xếp: Tên phần và tùy chọn sắp xếp
+  Grid Phim: Hiển thị các card phim dưới dạng lưới
+  Card Phim: Mỗi card hiển thị:
+  Poster phim
+  Xếp hạng sao
+  Overlay thông tin khi hover
+  Năm phát hành
+  Thể loại
+  Modal Chi Tiết
+  Poster: Hình ảnh phim
+  Thông Tin: Năm, thể loại, đạo diễn, diễn viên
+  Mô Tả: Tóm tắt nội dung phim
+  Xếp Hạng: Điểm đánh giá dưới dạng sao
+
+
+### 🎨 Giao Diện & Thiết Kế
+  Màu Sắc Chính
+  Chế độ Sáng: Nền trắng, accent xanh tím
+  Chế độ Tối: Nền đen, accent sáng
+  Typography
+  Heading: Poppins (Bold)
+  Body: Roboto (Regular)
+  Font Sizes: Responsive và dễ đọc
+  Effects
+  Gradient đẹp mắt ở header
+  Hover effects mượt mà
+  Animations smooth
+  Shadow effects chuyên nghiệp
+
+### 📊 Dữ Liệu Phim
+  Ứng dụng bao gồm danh sách 9 bộ phim nổi tiếng:
+
+    Inception (2010) - Sci-Fi, Action, Thriller
+    The Shawshank Redemption (1994) - Drama
+    The Dark Knight (2008) - Action, Crime, Drama
+    Parasite (2019) - Comedy, Drama, Thriller
+    The Godfather (1972) - Crime, Drama
+    Interstellar (2014) - Adventure, Drama, Sci-Fi
+    The Matrix (1999) - Action, Sci-Fi
+    Forrest Gump (1994) - Drama, Romance
+    Avengers: Endgame (2019) - Action, Adventure, Drama
+    ...
+
+### 🚀 Cách Phát Triển Thêm
+
+  Tính Năng Có Thể Thêm
+    ⭐ Chức năng "Yêu Thích" hoặc "Bookmark"
+    💾 Lưu trữ dữ liệu dùng LocalStorage
+    🔗 Kết nối API phim thực (TMDB, OMDb)
+    🔐 Xác thực người dùng
+    💬 Hệ thống bình luận
+    ⭐ Đánh giá phim của người dùng
+  Cải Tiến Hiệu Năng
+    📦 Tối ưu hóa hình ảnh
+    🔄 Lazy loading cho poster
+    ⚡ Minify CSS/JS
+    🗜️ Gzip compression
+    📝 Giấy Phép
+
 Dự án này được phát hành dưới giấy phép MIT. Bạn có thể sử dụng, sửa đổi và phân phối mã nguồn tự do.
 
-👨‍💻 Tác Giả
-Tên: Nguyễn Đức Quang
-GitHub: github.com/Nguyen-DucQuang
-Portfolio: nguyen-ducquang.github.io/newprofile
+### 👨‍💻 Tác Giả
+  Tên: Nguyễn Đức Quang
+  GitHub: github.com/Nguyen-DucQuang
+  Portfolio: nguyen-ducquang.github.io/newprofile
+
 🤝 Đóng Góp
-Nếu bạn muốn đóng góp cho dự án này:
+  Nếu bạn muốn đóng góp cho dự án này:
 
-Fork dự án
-Tạo branch cho tính năng mới (git checkout -b feature/TenTinhNang)
-Commit thay đổi (git commit -m 'Thêm tính năng mới')
-Push lên branch (git push origin feature/TenTinhNang)
-Mở Pull Request
-❓ Hỏi Đáp
-Làm sao để thêm phim mới?
-Mở file js/app.js và thêm object phim vào mảng movies
-Đảm bảo poster phim đã được lưu trong thư mục images/
-Làm sao để thay đổi màu sắc?
-Mở file css/style.css
-Tìm phần :root và sửa giá trị các biến CSS
-Hoặc sửa các giá trị màu trong body.dark-mode
-Tại sao poster không hiển thị?
-Kiểm tra đường dẫn ảnh trong dữ liệu phim
-Đảm bảo file ảnh tồn tại trong thư mục images/
-Kiểm tra tên file và phần mở rộng
-Làm sao để sử dụng API thực?
-Đăng ký account tại themoviedb.org
-Lấy API key
-Sửa file app.js để fetch dữ liệu từ API
-📞 Liên Hệ & Hỗ Trợ
-Nếu bạn gặp vấn đề hoặc có câu hỏi:
+    Fork dự án
+    Tạo branch cho tính năng mới (git checkout -b feature/TenTinhNang)
+    Commit thay đổi (git commit -m 'Thêm tính năng mới')
+    Push lên branch (git push origin feature/TenTinhNang)
+    Mở Pull Request
 
-📧 Email: [sssquang992@gmail.com]
-🐛 Report bug: Tạo issue trên GitHub
-💡 Gợi ý: Gửi pull request hoặc discussion
+### ❓ Hỏi Đáp
+    Làm sao để thêm phim mới?
+    Mở file js/app.js và thêm object phim vào mảng movies
+    Đảm bảo poster phim đã được lưu trong thư mục images/
+    Làm sao để thay đổi màu sắc?
+    Mở file css/style.css
+    Tìm phần :root và sửa giá trị các biến CSS
+    Hoặc sửa các giá trị màu trong body.dark-mode
+    Tại sao poster không hiển thị?
+    Kiểm tra đường dẫn ảnh trong dữ liệu phim
+    Đảm bảo file ảnh tồn tại trong thư mục images/
+    Kiểm tra tên file và phần mở rộng
+    Làm sao để sử dụng API thực?
+    Đăng ký account tại themoviedb.org
+    Lấy API key
+    Sửa file app.js để fetch dữ liệu từ API
 
-🙏 Cảm Ơn
-Cảm ơn bạn đã sử dụng Movie Discovery App! Hy vọng ứng dụng này giúp bạn khám phá thế giới điện ảnh thú vị.  
+### 📞 Liên Hệ & Hỗ Trợ
+    Nếu bạn gặp vấn đề hoặc có câu hỏi:
+
+### 📧 Email: [sssquang992@gmail.com]
+
+### 🐛 Report bug: Tạo issue trên GitHub
+
+### 💡 Gợi ý: Gửi pull request hoặc discussion
+
+### 🙏 Cảm Ơn
+  Cảm ơn bạn đã sử dụng Movie Discovery App! Hy vọng ứng dụng này giúp bạn khám phá thế giới điện ảnh thú vị.  
